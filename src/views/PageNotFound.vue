@@ -12,17 +12,34 @@
             navigation sur notre site.
           </p>
         </article>
-        <article class="page-404">
-          <div class="img-error">
+        <!-- <article class="page-404"> -->
+          <!-- <div class="img-error">
             <router-link to="/">
               <img :src="imgError.url" alt="" />
             </router-link>
+          </div> -->
+          <router-link to="/">
+          <div class="video-error">
+            <video
+              id="videoBG"
+              poster="img/poster.jpg"
+              preload="auto"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+              width="1920"
+              height="880"
+            >
+              <source src="../assets/img/notFound/mz.mp4" type="video/mp4" />
+            </video>
+            
           </div>
-          <div class="video-error"></div>
-          <video width="720" height="740" controls poster="vignette.jpg">
+          </router-link>
+          <!-- <video width="720" height="740" controls poster="vignette.jpg">
             <source src="../assets/img/notFound/mz.mp4" type="video/mp4" />
-          </video>
-        </article>
+          </video> -->
+        <!-- </article> -->
       </section>
     </div>
   </div>
